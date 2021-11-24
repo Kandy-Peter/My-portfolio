@@ -21,8 +21,10 @@ header {
   padding: 8px 22px;
 }
 
-header h1 {
+header a {
   font-size: 20px;
+  color: #6070ff;
+  text-decoration: none;
 }
 
 .clm-1 {
@@ -36,8 +38,9 @@ header h1 {
   color: #172b4d;
 }
 
-.clm-pres h2,
-h6 {
+.clm-pres h1,
+h2,
+p {
   padding-top: 10px;
   font-size: 16px;
   line-height: 24px;
@@ -51,7 +54,8 @@ h6 {
   padding-top: 10px;
 }
 
-.clm-pres h2 {
+.clm-pres h1,
+h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -64,12 +68,4 @@ ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  color: #6070ff;
 }
