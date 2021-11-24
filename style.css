@@ -36,7 +36,8 @@ header h1 {
   color: #172b4d;
 }
 
-.clm-pres p {
+.clm-pres h2,
+h6 {
   padding-top: 10px;
   font-size: 16px;
   line-height: 24px;
@@ -50,7 +51,7 @@ header h1 {
   padding-top: 10px;
 }
 
-.clm-pres p:first-child {
+.clm-pres h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
