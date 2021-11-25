@@ -179,7 +179,7 @@ ul {
   justify-content: start;
 }
 
-.card button {
+button {
   width: 125px;
   height: 50px;
   color: #6070ff;
@@ -189,19 +189,56 @@ ul {
   margin-top: 25px;
 }
 
-.card button:hover {
+button:hover {
   color: #dfe1e6;
   background-color: #6070ff;
   box-shadow: 0 8px 16px 0 #4053fc3d;
 }
 
-.card button:active {
+button:active {
   background: #2230d2;
   color: #fff;
 }
 
-.card button:disabled {
+button:disabled {
   color: #323c4e;
   border: 2px solid #323c4e;
   background-color: #fff;
+}
+
+/* -------------about me section-------------------- */
+
+.clm-3 {
+  background-color: #fff;
+  border-radius: 0 60px 0 0;
+  padding: 24px;
+  min-height: 700px;
+}
+
+.scroll-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.scroll-menu ul li {
+  width: 327px;
+  height: 71px;
+  border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#resume-btn {
+  width: 170px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.scroll-menu i {
+  color: #acb7c3;
 }
