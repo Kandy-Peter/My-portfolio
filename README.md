@@ -2,7 +2,8 @@
 
 This is my portfolio
 
-![screenshot](./images/my_portfolio.png)
+![screenshot](./images/portfolio.png)
+
 
 ## Built With
 
