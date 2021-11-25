@@ -9,32 +9,36 @@
 
 body {
   max-width: 480px;
-  overflow: hidden;
+  background-color: #f5f5f5;
 }
 
 header {
   width: 100%;
+  height: 60px;
   color: #6070ff;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 8px 22px;
+  padding: 15px 22px;
 }
 
 header a {
   font-size: 20px;
   color: #6070ff;
   text-decoration: none;
+  font-weight: 900;
 }
 
 .clm-1 {
   background: rgb(255, 255, 255) url(./images/header-shapes-bg.svg) no-repeat;
   background-size: cover;
-  padding: 22px;
+  padding: 24px;
+  border-radius: 0 0 0 60px;
+  min-height: 700px;
 }
 
 .clm-pres {
-  margin-top: 85px;
+  margin-top: 95px;
   color: #172b4d;
 }
 
@@ -47,11 +51,14 @@ p {
   font-weight: 400;
 }
 
+.links {
+  margin-top: 10px;
+}
+
 .links p {
   color: #7f8cff;
   text-transform: uppercase;
   font-size: 16px;
-  padding-top: 10px;
 }
 
 .clm-pres h1,
@@ -68,4 +75,133 @@ ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+}
+
+/* my portfolio works section */
+
+.card-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 100px 0;
+  grid-template-areas:
+    "card-1 card-1 card-1 card-1"
+    "card-2 card-2 card-2 card-2"
+    "card-3 card-3 card-3 card-3"
+    "card-4 card-4 card-4 card-4";
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 330px;
+  min-height: 570px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.card-1 { grid-area: card-1; }
+.card-2 { grid-area: card-2; }
+.card-3 { grid-area: card-3; }
+.card-4 { grid-area: card-4; }
+
+.card image {
+  height: 220px;
+}
+
+.card h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #172b4d;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.canopy {
+  display: flex;
+  width: 100%;
+  color: #172b4d;
+  margin: 14px 0;
+}
+
+.canopy h4 {
+  text-transform: uppercase;
+  font-size: 13px;
+  width: 25%;
+}
+
+.canopy ul {
+  list-style-type: disc;
+  display: flex;
+  flex: 1;
+  height: 10px;
+}
+
+.languages li {
+  color: #6070ff;
+  padding: 2px 12px;
+  margin-right: 6px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.canopy ul li {
+  font-size: 13px;
+  margin-left: 3px;
+  line-height: 2px;
+  font-weight: 700;
+  color: #7a869a;
+}
+
+.card-descript {
+  height: 76px;
+  width: 295px;
+  text-align: left;
+  color: #323c4e;
+  font-size: 15px;
+}
+
+.languages {
+  margin-top: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: start;
+}
+
+.card button {
+  width: 125px;
+  height: 50px;
+  color: #6070ff;
+  border: 2px solid #6070ff;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.card button:hover {
+  color: #dfe1e6;
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px 0 #4053fc3d;
+}
+
+.card button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.card button:disabled {
+  color: #323c4e;
+  border: 2px solid #323c4e;
+  background-color: #fff;
 }
