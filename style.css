@@ -147,14 +147,14 @@ ul {
   height: 10px;
 }
 
-.languages li {
+/* .languages li {
   color: #6070ff;
   padding: 2px 12px;
   margin-right: 6px;
   background-color: #ebebff;
   border-radius: 8px;
   font-size: 12px;
-}
+} */
 
 .canopy ul li {
   font-size: 13px;
@@ -172,11 +172,15 @@ ul {
   font-size: 15px;
 }
 
-.languages {
+/* .languages {
   margin-top: 10px;
   width: 300px;
   display: flex;
   justify-content: start;
+} */
+.languages li {
+  float: right;
+  display: ;
 }
 
 button {
