@@ -130,6 +130,7 @@ footer h2 {
   color: #fff;
   font-size: 40px;
   font-weight: 700;
+  margin-top: 100px;
 }
 
 .card h2 {
@@ -286,7 +287,7 @@ form textarea {
   outline: none;
   background-color: #fff;
   border: none;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 18px 16px;
 }
 

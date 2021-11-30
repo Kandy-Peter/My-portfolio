@@ -4,6 +4,8 @@ This is my portfolio
 
 ![screenshot](./images/portfolio.png)
 
+And the contact-form in phonr simulator
+![screenshot](./images/contact-form.png)
 
 ## Built With
 
