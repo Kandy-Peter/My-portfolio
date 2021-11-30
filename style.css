@@ -55,6 +55,14 @@ p {
   margin-top: 10px;
 }
 
+footer p {
+  color: #ebebff;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 15px;
+}
+
 .links p {
   color: #7f8cff;
   text-transform: uppercase;
@@ -113,6 +121,16 @@ ul {
 
 .card image {
   height: 220px;
+}
+
+footer h2 {
+  height: 56px;
+  width: 801px;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 100px;
 }
 
 .card h2 {
@@ -212,6 +230,7 @@ button:disabled {
   background-color: #fff;
   border-radius: 0 60px 0 0;
   padding: 24px;
+  padding-bottom: 80px;
   min-height: 700px;
 }
 
@@ -241,4 +260,46 @@ button:disabled {
 
 .scroll-menu i {
   color: #acb7c3;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: #6070ff url(./images/contact_form.svg) no-repeat;
+  background-size: cover;
+  border-radius: 50px 0 0 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+form input,
+form textarea {
+  width: 327px;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fff;
+  border: none;
+  margin: 10px auto;
+  padding: 18px 16px;
+}
+
+#name,
+#email {
+  height: 48px;
+}
+
+#textArea {
+  height: 170px;
+}
+
+#sub-btn {
+  margin-top: 18px;
 }
