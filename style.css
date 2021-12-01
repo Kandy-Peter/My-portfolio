@@ -22,12 +22,26 @@ header {
   padding: 15px 22px;
 }
 
-header a {
+.open,
+.close,
+#logo {
   font-size: 20px;
   color: #6070ff;
   text-decoration: none;
   font-weight: 900;
 }
+
+.menu,
+.close {
+  display: none;
+}
+
+/* header a {
+  font-size: 20px;
+  color: #6070ff;
+  text-decoration: none;
+  font-weight: 900;
+} */
 
 .clm-1 {
   background: rgb(255, 255, 255) url(./images/header-shapes-bg.svg) no-repeat;
@@ -302,4 +316,121 @@ form textarea {
 
 #sub-btn {
   margin-top: 18px;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  header {
+    width: 1100px;
+    height: 60px;
+    padding: 20px 100px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+  }
+
+  nav {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .open {
+    display: none;
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    text-align: center;
+    margin: 5px 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu a {
+    color: #0d1420;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .menu a:hover {
+    color: #4456fa;
+  }
+
+  /* ------------------first section ---------------- */
+
+  .clm-1 {
+    margin-top: 60px;
+    background-image: url(./images/Header_bg.svg);
+    background-size: contain;
+    padding-left: 210px;
+    padding-right: 210px;
+    min-height: 600px;
+  }
+  
+  .clm-pres h1,
+  h2 {
+    font-size: 48px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 880px;
+    min-height: 360px;
+    max-height: 360px;
+  }
+  
+  .card img {
+    width: 45%;
+  }
+
+  .details {
+    margin-left: 40px;
+    height: 280px;
+  }
+
+  .details h2 {
+    width: 100%;
+  }
+
+  .card-descript {
+    width: 100%;
+    height: 60px;
+  }
+
+  .languages {
+    margin-top: 0;
+  }
+  
+  .canopy {
+    margin: 5px
+  }
+
+  .details button {
+    width: 100px;
+    height: 45px;
+  }
+
+  .card-2 img,
+  .card-4 img{
+    order: 2;
+  }
 }
