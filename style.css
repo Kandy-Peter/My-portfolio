@@ -318,7 +318,7 @@ form textarea {
   margin-top: 18px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 920px) {
   body {
     max-width: 1100px;
     margin: 0 auto;
@@ -485,6 +485,7 @@ form textarea {
   footer {
     background: #6070ff url(./images/background.svg) no-repeat;
     background-size: 100%;
+    justify-content: center;
   }
 
   form input,
@@ -492,6 +493,10 @@ form textarea {
     width: 450px;
     border-radius: 2px;
     margin: 27px auto;
+  }
+
+  #sub-btn {
+    margin: 0 auto;
   }
 
   #sub-btn:hover {
