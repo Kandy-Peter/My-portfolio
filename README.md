@@ -7,6 +7,9 @@ This is my portfolio
 And the contact-form in phonr simulator
 ![screenshot](./images/contact-form.png)
 
+This si my desktop version
+![screenshot](./images/desktop-version.png)
+
 ## Built With
 
 - HTML

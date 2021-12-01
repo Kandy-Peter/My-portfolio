@@ -340,7 +340,12 @@ form textarea {
     align-items: center;
     justify-content: center;
   }
-  
+
+  footer p {
+    width: 550px;
+    margin-top: 15px;
+  }
+
   .open {
     display: none;
     text-align: center;
@@ -383,12 +388,12 @@ form textarea {
     padding-right: 210px;
     min-height: 600px;
   }
-  
+
   .clm-pres h1,
   h2 {
     font-size: 48px;
   }
-  
+
   .card {
     display: flex;
     flex-direction: row;
@@ -397,7 +402,7 @@ form textarea {
     min-height: 360px;
     max-height: 360px;
   }
-  
+
   .card img {
     width: 45%;
   }
@@ -419,9 +424,9 @@ form textarea {
   .languages {
     margin-top: 0;
   }
-  
+
   .canopy {
-    margin: 5px
+    margin: 5px;
   }
 
   .details button {
@@ -430,7 +435,66 @@ form textarea {
   }
 
   .card-2 img,
-  .card-4 img{
+  .card-4 img {
     order: 2;
+  }
+
+  /* ---------------------ABOUT ME SECTION------------------ */
+
+  .clm-3 {
+    height: 670px;
+    border-radius: 0 90px 0 0;
+    padding: 0 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .abt-clm {
+    width: 390px;
+  }
+
+  .scroll-menu {
+    flex: 1;
+    margin-left: 35px;
+  }
+
+  .scroll-menu ul li {
+    width: 450px;
+    height: 80px;
+    border-bottom: 1px solid #dfe1e6;
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  .clm-pres h1,
+  .clm-pres h2 {
+    font-size: 40px;
+    line-height: 35px;
+  }
+
+  .clm-pres p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* ------------------------------FOOTER------------------------ */
+
+  footer {
+    background: #6070ff url(./images/background.svg) no-repeat;
+    background-size: 100%;
+  }
+
+  form input,
+  form textarea {
+    width: 450px;
+    border-radius: 2px;
+    margin: 27px auto;
+  }
+
+  #sub-btn:hover {
+    border: 1px solid #fff;
   }
 }
