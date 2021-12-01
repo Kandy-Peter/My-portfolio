@@ -1,7 +1,7 @@
 {
   "name": "My-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is my portfolio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,9 +17,6 @@
     "url": "https://github.com/Kandy-Peter/My-portfolio/issues"
   },
   "homepage": "https://github.com/Kandy-Peter/My-portfolio#readme",
-  "dependencies": {
-    "hint": "^6.1.9"
-  },
   "devDependencies": {
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
