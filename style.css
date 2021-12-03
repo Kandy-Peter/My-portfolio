@@ -75,6 +75,19 @@ footer p {
   font-weight: 400;
   text-align: center;
   margin-top: 15px;
+  animation: 3s slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to{
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .links p {
@@ -133,8 +146,12 @@ ul {
 .card-3 { grid-area: card-3; }
 .card-4 { grid-area: card-4; }
 
-.card image {
-  height: 220px;
+.card img {
+  transition: all 0.4s ease-out;
+}
+
+.card img:hover {
+  transform: scale(1.2);
 }
 
 footer h2 {
@@ -219,6 +236,7 @@ button {
   background-color: #fff;
   border-radius: 8px;
   margin-top: 25px;
+  transition: all 0.4s ease-out;
 }
 
 button:hover {
