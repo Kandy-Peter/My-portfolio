@@ -24,6 +24,8 @@ To use this project and running it localy, follow the steps bellow:
 
 clone repo: `git clone https://github.com/Kandy-Peter/My-portfolio.git`
 
+###Live
+ To see live project go to: [https://kandy-peter.github.io/My-portfolio/](https://kandy-peter.github.io/My-portfolio/)
 ### Install
 
  run `npm install` to install dependencies
