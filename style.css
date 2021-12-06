@@ -8,6 +8,14 @@
 }
 
 body {
+  background-color: none;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
   max-width: 480px;
   background-color: #f5f5f5;
 }
