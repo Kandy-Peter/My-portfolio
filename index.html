@@ -18,16 +18,17 @@
     </script>
 </head>
 <body>
-    <div class="contents">
         <header>
-                <a href="./index.html" id="logo">Kandy</a>
                 <nav>
-                    <i class="fa fa-bars open"></i>
-                    <i class="fa fa-times close"></i>
+                    <a href="./index.html" id="logo">Kandy</a>
+                    <div class="toggle">
+                        <i class="fa fa-bars open-btn"></i>
+                        <i class="fa fa-times close-btn"></i>
+                    </div>
                     <ul class="menu">
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#portfolio" class="menu-link">Portfolio</a></li>
+                        <li><a href="#about" class="menu-link">About</a></li>
+                        <li><a href="#contact" class="menu-link">Contact</a></li>
                     </ul>
                 </nav>
         </header>
@@ -228,6 +229,6 @@
                 <button type="submit" id="sub-btn">Get In Touch</button>
             </form>
         </footer>
-    </div>
+    <script src="app.js"></script>
 </body>
 </html>
