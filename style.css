@@ -438,7 +438,7 @@ form textarea {
     padding: 0;
     height: 100%;
   }
-  
+
   .open-menu .menu {
     transform: translateX(-100%);
   }
