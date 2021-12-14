@@ -8,48 +8,80 @@
 }
 
 body {
-  background-color: #dfe1e600;
-}
-
-.contents {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
+  margin: 0 auto;
+  width: 100%;
   max-width: 480px;
   background-color: #f5f5f5;
 }
 
-header {
+header{
+  display: flex;
   width: 100%;
-  height: 60px;
-  color: #6070ff;
   background-color: #fff;
+}
+nav {
   display: flex;
   justify-content: space-between;
-  padding: 15px 22px;
+  width: 100%;
+  height: 100%;
+  padding: 10px
 }
 
-.open-btn,
-.close-btn,
+.toggle {
+  display: block;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 20;
+  color: #6070ff;
+}
+.open-btn {
+    display: block;
+}
+.close-btn {
+    display: none;
+}
+
+.open-menu .open-btn {
+    display: none;
+}
+.open-menu .close-btn {
+    display: block;
+    color: #fff;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    padding-left: 10%;
+    padding-right: 90%;
+    height: 100%;
+    background-color: #6070FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateX(-100%);
+    transition: transform 1s;
+}
+
+.menu li a {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.open-menu .menu {
+  transform: translateX(0);
+  z-index: 5;
+}
+
 #logo {
   font-size: 20px;
   color: #6070ff;
   text-decoration: none;
   font-weight: 900;
 }
-
-.menu,
-.close-btn {
-  display: none;
-}
-
-/* header a {
-  font-size: 20px;
-  color: #6070ff;
-  text-decoration: none;
-  font-weight: 900;
-} */
 
 .clm-1 {
   background: rgb(255, 255, 255) url(./images/header-shapes-bg.svg) no-repeat;
@@ -345,7 +377,7 @@ form textarea {
 }
 
 @media screen and (min-width: 992px) {
-  .contents {
+  body {
     max-width: 1100px;
     margin: 0 auto;
   }
