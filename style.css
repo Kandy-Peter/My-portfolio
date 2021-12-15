@@ -164,6 +164,51 @@ ul {
   justify-content: space-between;
 }
 
+/* -------------POPUP WINDOW------------ */
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #fefefec2;
+}
+
+.popup.active {
+  display: inline-block;
+}
+
+.popup-content {
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  height: 640px;
+  max-height: 80%;
+  min-width: 520px;
+  width: 45%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: top 250ms linear, opacity 200ms linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup-content.active {
+  opacity: 1;
+  top: 10% !important;
+}
+
+.popup-title img {
+  width: 200px;
+  height: 200px;
+}
+
 /* my portfolio works section */
 
 .card-container {
