@@ -96,8 +96,6 @@ popupsBtn.forEach((btn) => {
     const popupId = btn.getAttribute('data-popup-ref');
     const popup = document.querySelector(`[data-popup-id='${popupId}']`);
 
-    // console.log(popup);
-
     if (popup !== undefined && popup !== null) {
       const popupContent = popup.querySelector('.popup-content');
       const closeBtns = popup.querySelectorAll('[data-dismiss-popup]');

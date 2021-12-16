@@ -198,7 +198,6 @@ ul {
   transition: top 250ms linear, opacity 200ms linear;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   overflow-x: hidden;
   overflow-y: scroll;
   border-radius: 16px;
@@ -269,6 +268,10 @@ ul {
   justify-content: space-between;
 }
 
+.window-btn-links img {
+  color: white;
+}
+
 /* my portfolio works section */
 
 .card-container {
@@ -314,7 +317,6 @@ ul {
 
 footer h2 {
   height: 56px;
-  width: 801px;
   text-align: center;
   color: #fff;
   font-size: 40px;
@@ -710,7 +712,7 @@ form textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 70%;
+    max-width: 250px;
     margin-bottom: 0;
   }
 
