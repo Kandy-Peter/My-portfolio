@@ -568,6 +568,106 @@ form textarea {
     order: 2;
   }
 
+  /* PopUp Window */
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1000;
+    background-color: #fefefec2;
+    overflow-y: scroll;
+  }
+  
+  .popup.active {
+    display: inline-block;
+  }
+  
+  .close-popup {
+    font-size: 25px;
+    color: grey;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+  .popup-content {
+    position: relative;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    height: 640px;
+    min-height: 100vh;
+    min-width: 520px;
+    width: 80%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: top 250ms linear, opacity 200ms linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 2px solid red;
+    padding: 20px;
+  }
+  
+  .popup .canopy {
+    width: 40%;
+  }
+  .popup-content.active {
+    opacity: 1;
+    top: 10% !important;
+  }
+  
+  .popup-title img {
+    width: 200px;
+    height: 200px;
+    
+  }
+
+  .window-details {
+    display: grid;
+    grid-template-areas: 'paragraph paragraph paragraph list list' 'paragraph paragraph paragraph links links' ;
+
+  }
+
+  .window-descript { 
+    grid-area: paragraph;
+    margin-right: 20px;
+
+  }
+
+  .window-languages {
+    grid-area: list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .window-languages li{
+  color: #6070ff;
+  padding: 2px 12px;
+  margin-right: 6px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-top: 5px
+  }
+
+  .window-btn-links {
+    grid-area: links;
+  }
+
+  .window-btn-links button {
+    padding: 2px;
+    height: 35px
+
+  }
+
+
   /* ---------------------ABOUT ME SECTION------------------ */
 
   .clm-3 {
