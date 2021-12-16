@@ -142,6 +142,11 @@ footer p {
   }
 }
 
+::-webkit-scrollbar {
+  width: 2px;
+  visibility: hidden;
+}
+
 .links p {
   color: #7f8cff;
   text-transform: uppercase;
@@ -172,9 +177,9 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 1000;
-  background-color: #fefefec2;
+  background-color: #c1c7d0;
 }
 
 .popup.active {
@@ -184,29 +189,84 @@ ul {
 .popup-content {
   position: fixed;
   left: 50%;
-  top: 5%;
+  top: 0;
   transform: translateX(-50%);
-  height: 640px;
-  max-height: 80%;
-  min-width: 520px;
+  height: 95%;
+  min-width: 340px;
   width: 45%;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
   transition: top 250ms linear, opacity 200ms linear;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-radius: 16px;
+  padding: 18px;
 }
 
 .popup-content.active {
   opacity: 1;
-  top: 10% !important;
+  top: 2% !important;
+}
+
+.popup-h2 {
+  color: #172b4d;
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
 }
 
 .popup-title img {
-  width: 200px;
-  height: 200px;
+  width: 306px;
+  height: 220px;
+  margin: 12px 0;
+}
+
+.popup-canopy {
+  margin: 0;
+  padding: 0;
+}
+
+.close-popup {
+  font-size: 24px;
+  color: rgb(167, 164, 164);
+  position: absolute;
+  top: 24px;
+  right: 20px;
+}
+
+.window-descript {
+  width: 100%;
+  color: #172b4d;
+  height: 300px;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.window-languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.window-languages li {
+  color: #6070ff;
+  padding: 2px 12px;
+  margin: 0;
+  margin-right: 6px;
+  margin-bottom: 5px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.window-btn-links {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* my portfolio works section */
@@ -231,6 +291,7 @@ ul {
   flex-direction: column;
   padding: 16px;
   width: 330px;
+  margin: 5rem auto;
   min-height: 570px;
   background: #fff;
   border: 1px solid #dfe1e6;
@@ -351,6 +412,10 @@ button:disabled {
   color: #323c4e;
   border: 2px solid #323c4e;
   background-color: #fff;
+}
+
+.window-btn-links button {
+  width: 48%;
 }
 
 /* -------------about me section-------------------- */
@@ -578,95 +643,104 @@ form textarea {
     width: 100%;
     min-height: 100%;
     z-index: 1000;
-    background-color: #fefefec2;
     overflow-y: scroll;
   }
-  
+
   .popup.active {
     display: inline-block;
   }
-  
-  .close-popup {
-    font-size: 25px;
-    color: grey;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-  }
+
   .popup-content {
     position: relative;
     left: 50%;
     top: 5%;
     transform: translateX(-50%);
-    height: 640px;
-    min-height: 100vh;
+    height: 800px;
     min-width: 520px;
-    width: 80%;
+    width: 70%;
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
     transition: top 250ms linear, opacity 200ms linear;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 8px;
-    border: 2px solid red;
     padding: 20px;
+    overflow-y: scroll;
+    margin-bottom: 2rem;
   }
-  
+
+  .close-popup {
+    font-size: 24px;
+    color: rgb(131, 131, 131);
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+
   .popup .canopy {
     width: 40%;
+    margin: 0;
+    padding: 0;
   }
+
   .popup-content.active {
     opacity: 1;
-    top: 10% !important;
+    top: 10%;
   }
-  
+
   .popup-title img {
-    width: 200px;
-    height: 200px;
-    
+    width: 100%;
+    height: 600px;
+    margin: 15px auto;
   }
 
   .window-details {
-    display: grid;
-    grid-template-areas: 'paragraph paragraph paragraph list list' 'paragraph paragraph paragraph links links' ;
-
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
-  .window-descript { 
-    grid-area: paragraph;
-    margin-right: 20px;
-
+  .window-descript {
+    margin-right: 30px;
+    width: 85%;
   }
 
   .window-languages {
-    grid-area: list;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    max-width: 70%;
+    margin-bottom: 0;
   }
 
-  .window-languages li{
-  color: #6070ff;
-  padding: 2px 12px;
-  margin-right: 6px;
-  background-color: #ebebff;
-  border-radius: 8px;
-  font-size: 12px;
-  margin-top: 5px
+  .window-languages li {
+    color: #6070ff;
+    padding: 2px 12px;
+    margin: 0;
+    margin-right: 6px;
+    margin-bottom: 5px;
+    background-color: #ebebff;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-top: 5px;
   }
 
   .window-btn-links {
-    grid-area: links;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    border-top: 1px solid #c2c2c2;
   }
 
   .window-btn-links button {
     padding: 2px;
-    height: 35px
-
+    height: 40px;
+    width: 140px;
+    text-align: center;
+    margin-right: 0.5rem;
   }
-
 
   /* ---------------------ABOUT ME SECTION------------------ */
 
