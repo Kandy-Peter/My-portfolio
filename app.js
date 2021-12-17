@@ -123,23 +123,26 @@ popupsBtn.forEach((btn) => {
 
 //  ----------------- FORM VALIDATION -----------------
 
+const form = document.querySelector('#form');
 const userMail = document.querySelector("input[name='email']");
 const emailMsg = document.getElementById('email-message');
-const button = document.getElementById('sub-btn');
 
 const isValidEmail = (email) => {
-  const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
-  return regex.test(String(email).toLowerCase());
-};
-
-function valideForm(e) {
-  const email = userMail.value;
-  if (isValidEmail(email)) {
-    e.preventDefault();
-  } else {
+  if (email !== email.toLowerCase()) {
     emailMsg.innerHTML = 'Please, enter your email(in lowercase)!';
     emailMsg.style.color = 'orange';
     userMail.style.border = '1px solid orange';
+    return false;
+  }
+  return true;
+};
+
+function valideForm(e) {
+  e.preventDefault();
+  const email = userMail.value;
+  if (isValidEmail(email)) {
+    form.submit();
   }
 }
-button.addEventListener('click', valideForm);
+
+form.addEventListener('submit', valideForm);
