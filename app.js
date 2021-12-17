@@ -131,3 +131,15 @@ const isValidEmail = (email) => {
   const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
   return regex.test(String(email).toLowerCase());
 };
+
+function valideForm(e) {
+  const email = userMail.value;
+  if (isValidEmail(email)) {
+    e.preventDefault();
+  } else {
+    emailMsg.innerHTML = 'Please, enter your email(in lowercase)!';
+    emailMsg.style.color = 'orange';
+    userMail.style.border = '1px solid orange';
+  }
+}
+button.addEventListener('click', valideForm);
