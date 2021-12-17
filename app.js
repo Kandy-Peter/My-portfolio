@@ -129,7 +129,7 @@ const emailMsg = document.getElementById('email-message');
 
 const isValidEmail = (email) => {
   if (email !== email.toLowerCase()) {
-    emailMsg.innerHTML = 'Please, enter your email(in lowercase)!';
+    emailMsg.innerHTML = 'Enter a valid email in lowercase!';
     emailMsg.style.color = 'orange';
     userMail.style.border = '1px solid orange';
     return false;
