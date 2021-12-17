@@ -120,3 +120,14 @@ popupsBtn.forEach((btn) => {
     }
   });
 });
+
+//  ----------------- FORM VALIDATION -----------------
+
+const userMail = document.querySelector("input[name='email']");
+const emailMsg = document.getElementById('email-message');
+const button = document.getElementById('sub-btn');
+
+const isValidEmail = (email) => {
+  const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+  return regex.test(String(email).toLowerCase());
+};

@@ -178,10 +178,14 @@
         <footer id="contact">
             <h2>Contact me</h2>
                 <p>If you have an application you are interested in<br/> developing, a feature that you need built or a project<br/> that needs coding. I’d love to help with it </p>
-            <form action="https://formspree.io/f/xwkyerln" method="POST">
+            <form action="https://formspree.io/f/xwkyerln" method="POST" id="form">
                 <input type="text" name="name" id="name" maxlength="30" placeholder="Full name" required>
-                <input type="email" name="email" placeholder="Email" id="email" required>
+
+                <input type="email" name="email" placeholder="Email" id="email">
+                <span id="email-message"></span>
+
                 <textarea name="textArea" maxlength="500"  id="textArea" cols="30" rows="10" placeholder="Write your message here" required></textarea>
+
                 <button type="submit" id="sub-btn">Get In Touch</button>
             </form>
         </footer>
