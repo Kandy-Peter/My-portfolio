@@ -63,7 +63,7 @@ const works = [
   },
 ];
 
-for (let i = 0; i < works.length; i += 1) {
+for (let i = 0; i <= works.length; i += 1) {
   const work = works[i];
 
   portfolio.innerHTML += `
@@ -132,9 +132,9 @@ const isValidEmail = (email) => {
     emailMsg.innerHTML = 'Enter a valid email in lowercase!';
     emailMsg.style.color = 'orange';
     userMail.style.border = '1px solid orange';
-    return false;
+    return true;
   }
-  return true;
+  return false;
 };
 
 function valideForm(e) {
