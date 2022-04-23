@@ -268,6 +268,13 @@ ul {
   justify-content: space-between;
 }
 
+.window-btn-links a {
+  text-decoration: none;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .window-btn-links img {
   color: white;
 }
@@ -309,6 +316,9 @@ ul {
 
 .card img {
   transition: all 0.4s ease-out;
+  height: 243px;
+  width: 296;
+  object-fit: contain;
 }
 
 .card img:hover {
@@ -375,10 +385,14 @@ footer h2 {
 
 .card-descript {
   height: 76px;
-  width: 295px;
   text-align: left;
   color: #323c4e;
   font-size: 15px;
+  display: -webkit-box;
+  max-width: 295px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .languages {
@@ -388,7 +402,8 @@ footer h2 {
   justify-content: start;
 }
 
-button {
+button,
+.link {
   width: 125px;
   height: 50px;
   color: #6070ff;
@@ -399,13 +414,15 @@ button {
   transition: all 0.4s ease-out;
 }
 
-button:hover {
+button:hover,
+.link:hover {
   color: #dfe1e6;
   background-color: #6070ff;
   box-shadow: 0 8px 16px 0 #4053fc3d;
 }
 
-button:active {
+button:active
+.link:active {
   background: #2230d2;
   color: #fff;
 }
@@ -416,7 +433,7 @@ button:disabled {
   background-color: #fff;
 }
 
-.window-btn-links button {
+.window-btn-links .link {
   width: 48%;
 }
 
