@@ -25,8 +25,8 @@ const works = [
     canopy: ['CANOPY', 'Back End Dev', '2015'],
     descript: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'css', 'javaScript'],
-    sourcebtn: '#',
-    liveBtn: '#',
+    sourcebtn: 'https://github.com/Kandy-Peter/My-portfolio/tree/main',
+    liveBtn: 'https://github.com/Kandy-Peter/My-portfolio/tree/main',
   },
   {
     id: 2,
@@ -36,8 +36,8 @@ const works = [
     canopy: ['CANOPY', 'Back End Dev', '2015'],
     descript: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'css', 'javaScript'],
-    sourcebtn: '#',
-    liveBtn: '#',
+    sourcebtn: 'https://github.com/Kandy-Peter/My-portfolio/tree/main',
+    liveBtn: 'https://github.com/Kandy-Peter/My-portfolio/tree/main',
   },
   {
     id: 3,
@@ -47,8 +47,8 @@ const works = [
     canopy: ['CANOPY', 'Back End Dev', '2015'],
     descript: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'css', 'javaScript'],
-    sourcebtn: '#',
-    liveBtn: '#',
+    sourcebtn: 'https://github.com/Kandy-Peter/My-portfolio/tree/main',
+    liveBtn: 'https://github.com/Kandy-Peter/My-portfolio/tree/main',
   },
   {
     id: 4,
@@ -58,8 +58,8 @@ const works = [
     canopy: ['CANOPY', 'Back End Dev', '2015'],
     descript: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['HTML', 'CSS', 'javaScript'],
-    sourcebtn: '#',
-    liveBtn: '#',
+    sourcebtn: 'https://github.com/Kandy-Peter/My-portfolio/tree/main',
+    liveBtn: 'https://github.com/Kandy-Peter/My-portfolio/tree/main',
   },
 ];
 
@@ -90,11 +90,28 @@ for (let i = 0; i < works.length; i += 1) {
 }
 
 const popupsBtn = document.querySelectorAll('[data-popup-ref]');
+const popupTitle = document.querySelector('.popup-h2'); 
+const popupCanopy = document.querySelector('.popup-canopy'); 
+const popImage = document.querySelector('.popup-title img'); 
+const projectDetails = document.querySelector('.window-descript');
+const language = document.querySelector('.window-languages');
+const liveLink = document.querySelector('.btn-live');
+const ghLink = document.querySelector('.btn-code');
 
 popupsBtn.forEach((btn) => {
   btn.addEventListener('click', () => {
     const popupId = btn.getAttribute('data-popup-ref');
-    const popup = document.querySelector(`[data-popup-id='${popupId}']`);
+    const id = Number(btn.parentNode.parentNode.id.split('-')[1]);
+    const popup = document.querySelector(`[data-popup-id='${popupId}']`); 
+    const {
+      title,
+      image,
+      imageAlt,
+      descript,
+      languages,
+      sourcebtn,
+      liveBtn
+    } = works.find((work) => work.id === id)
 
     if (popup !== undefined && popup !== null) {
       const popupContent = popup.querySelector('.popup-content');
@@ -109,12 +126,20 @@ popupsBtn.forEach((btn) => {
         });
       });
 
-      popupContent.addEventListener('click', (ev) => {
-        ev.stopPropagation();
+      popupContent.addEventListener('click', (event) => {
+        event.stopPropagation();
       });
 
       popup.classList.add('active');
       setTimeout(() => {
+        popupTitle.innerText = title;
+        popImage.setAttribute('src', image);
+        popImage.setAttribute('alt', imageAlt);
+        projectDetails.innerText = descript;
+        language.innerHTML = languages.map((lang) => `<li>${lang}</li>`).join('');
+        liveLink.setAttribute('href', liveBtn);
+        ghLink.setAttribute('href', sourcebtn);
+        
         popupContent.classList.add('active');
       }, 1);
     }
