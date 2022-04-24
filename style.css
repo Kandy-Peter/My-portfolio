@@ -678,9 +678,9 @@ form textarea {
   .popup-content {
     position: relative;
     left: 50%;
-    top: 5%;
+    top: 12%;
     transform: translateX(-50%);
-    height: 800px;
+    height: 570px;
     min-width: 520px;
     width: 70%;
     background-color: #fff;
@@ -691,7 +691,6 @@ form textarea {
     border-radius: 8px;
     padding: 20px;
     overflow-y: scroll;
-    margin-bottom: 2rem;
   }
 
   .close-popup {
@@ -715,27 +714,28 @@ form textarea {
 
   .popup-title img {
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin: 15px auto;
+    object-fit: contain;
   }
 
   .window-details {
-    margin: 2rem 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
 
   .window-descript {
-    margin-right: 30px;
-    width: 85%;
+    margin-right: 10px;
+    width: 70%;
   }
 
   .window-languages {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 250px;
+    max-width: 350px;
     margin-bottom: 0;
   }
 
@@ -759,7 +759,7 @@ form textarea {
     border-top: 1px solid #c2c2c2;
   }
 
-  .window-btn-links button {
+  .window-btn-links .link {
     padding: 2px;
     height: 40px;
     width: 140px;

@@ -61,6 +61,17 @@ const works = [
     sourcebtn: 'https://github.com/Kandy-Peter/crypto-exchange',
     liveBtn: 'https://reverent-dubinsky-40ea41.netlify.app/',
   },
+  {
+    id: 5,
+    title: 'React-Todo',
+    image: './images/todo-screenshot.png',
+    imageAlt: 'my_todo_img',
+    canopy: ['CANOPY', 'Front-End Dev', '2022'],
+    descript: 'This is a simple CRUD web app build with react and sass. The todo list allows user to keep track on his(her) tasks. User can crate new todo, delete todo, mark completed tasks and also edit and update an item.',
+    languages: ['React', 'SASS', 'LocalStorage'],
+    sourcebtn: 'https://github.com/Kandy-Peter/react-todo',
+    liveBtn: 'https://nostalgic-clarke-f49792.netlify.app/',
+  },
 ];
 
 for (let i = 0; i < works.length; i += 1) {
