@@ -77,6 +77,13 @@ nav {
   padding-top: 1rem;
 }
 
+.window-btn-links a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu li a {
   font-size: 30px;
   color: #fff;
@@ -142,11 +149,6 @@ footer p {
   }
 }
 
-::-webkit-scrollbar {
-  width: 2px;
-  visibility: hidden;
-}
-
 .links p {
   color: #7f8cff;
   text-transform: uppercase;
@@ -179,7 +181,12 @@ ul {
   width: 100%;
   height: 100vh;
   z-index: 1000;
-  background-color: #c1c7d0;
+  background-color: #c1c7d073;
+}
+
+.popup ::-webkit-scrollbar {
+  width: 2px;
+  visibility: hidden;
 }
 
 .popup.active {
@@ -238,7 +245,7 @@ ul {
 .window-descript {
   width: 100%;
   color: #172b4d;
-  height: 300px;
+  padding: 30px 10px;
   overflow: hidden;
   font-size: 16px;
 }
@@ -309,6 +316,9 @@ ul {
 
 .card img {
   transition: all 0.4s ease-out;
+  height: 243px;
+  width: 296px;
+  object-fit: contain;
 }
 
 .card img:hover {
@@ -375,10 +385,14 @@ footer h2 {
 
 .card-descript {
   height: 76px;
-  width: 295px;
   text-align: left;
   color: #323c4e;
   font-size: 15px;
+  display: -webkit-box;
+  max-width: 295px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .languages {
@@ -388,7 +402,8 @@ footer h2 {
   justify-content: start;
 }
 
-button {
+button,
+.link {
   width: 125px;
   height: 50px;
   color: #6070ff;
@@ -399,13 +414,19 @@ button {
   transition: all 0.4s ease-out;
 }
 
-button:hover {
+.window-btn-links .link {
+  width: 48%;
+}
+
+button:hover,
+.link:hover {
   color: #dfe1e6;
   background-color: #6070ff;
   box-shadow: 0 8px 16px 0 #4053fc3d;
 }
 
-button:active {
+button:active,
+.link:active {
   background: #2230d2;
   color: #fff;
 }
@@ -414,10 +435,6 @@ button:disabled {
   color: #323c4e;
   border: 2px solid #323c4e;
   background-color: #fff;
-}
-
-.window-btn-links button {
-  width: 48%;
 }
 
 /* -------------about me section-------------------- */
@@ -661,9 +678,9 @@ form textarea {
   .popup-content {
     position: relative;
     left: 50%;
-    top: 5%;
+    top: 12%;
     transform: translateX(-50%);
-    height: 800px;
+    height: 570px;
     min-width: 520px;
     width: 70%;
     background-color: #fff;
@@ -674,7 +691,6 @@ form textarea {
     border-radius: 8px;
     padding: 20px;
     overflow-y: scroll;
-    margin-bottom: 2rem;
   }
 
   .close-popup {
@@ -698,27 +714,28 @@ form textarea {
 
   .popup-title img {
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin: 15px auto;
+    object-fit: contain;
   }
 
   .window-details {
-    margin: 2rem 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
 
   .window-descript {
-    margin-right: 30px;
-    width: 85%;
+    margin-right: 10px;
+    width: 70%;
   }
 
   .window-languages {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 250px;
+    max-width: 350px;
     margin-bottom: 0;
   }
 
@@ -742,7 +759,7 @@ form textarea {
     border-top: 1px solid #c2c2c2;
   }
 
-  .window-btn-links button {
+  .window-btn-links .link {
     padding: 2px;
     height: 40px;
     width: 140px;
