@@ -8,7 +8,7 @@ My portfolio is a personal website built with HTML, CSS, Javascript. It's one of
 
 ## Screenchot
 
-![screenshot]()
+![screencapture](https://user-images.githubusercontent.com/80612925/164973173-5c72ba4b-fc4d-41c2-a933-11abb6c6c800.png)
 ## Demo Link
 [kandy_portfolio](https://kandy-peter.github.io/My-portfolio/)
 ## Built With
