@@ -77,6 +77,13 @@ nav {
   padding-top: 1rem;
 }
 
+.window-btn-links a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu li a {
   font-size: 30px;
   color: #fff;
@@ -268,13 +275,6 @@ ul {
   justify-content: space-between;
 }
 
-.window-btn-links a {
-  text-decoration: none;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .window-btn-links img {
   color: white;
 }
@@ -317,7 +317,7 @@ ul {
 .card img {
   transition: all 0.4s ease-out;
   height: 243px;
-  width: 296;
+  width: 296px;
   object-fit: contain;
 }
 
@@ -414,6 +414,10 @@ button,
   transition: all 0.4s ease-out;
 }
 
+.window-btn-links .link {
+  width: 48%;
+}
+
 button:hover,
 .link:hover {
   color: #dfe1e6;
@@ -421,7 +425,7 @@ button:hover,
   box-shadow: 0 8px 16px 0 #4053fc3d;
 }
 
-button:active
+button:active,
 .link:active {
   background: #2230d2;
   color: #fff;
@@ -431,10 +435,6 @@ button:disabled {
   color: #323c4e;
   border: 2px solid #323c4e;
   background-color: #fff;
-}
-
-.window-btn-links .link {
-  width: 48%;
 }
 
 /* -------------about me section-------------------- */
