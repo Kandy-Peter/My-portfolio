@@ -1,19 +1,21 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Html-blue)
+![](https://img.shields.io/badge/css-red)
+![](https://img.shields.io/badge/Javascript-pink)
+
 # My-portfolio
+My portfolio is a personal website built with HTML, CSS, Javascript. It's one of the microverse's projects to showcase my skills. 
 
-This is my portfolio
+## Screenchot
 
-![screenshot](./images/portfolio.png)
-
-And the contact-form in phonr simulator
-![screenshot](./images/contact-form.png)
-
-This si my desktop version
-![screenshot](./images/desktop-version.png)
-
+![screenshot]()
+## Demo Link
+[kandy_portfolio](https://kandy-peter.github.io/My-portfolio/)
 ## Built With
 
 - HTML
 - CSS
+- JavaScript
 - Figma
 
 ## Getting Started
@@ -21,34 +23,24 @@ This si my desktop version
 To use this project and running it localy, follow the steps bellow:
 
 ### Prerequisites
+ - A text editor(preferably Visual Studio Code)
 
-clone repo: `git clone https://github.com/Kandy-Peter/My-portfolio.git`
-
-###Live
- To see live project go to: [https://kandy-peter.github.io/My-portfolio/](https://kandy-peter.github.io/My-portfolio/)
 ### Install
+  -  [Git](https://git-scm.com/downloads)
+  -  [Node](https://nodejs.org/en/download/)
 
- run `npm install` to install dependencies
+#### Clone this repository
 
-## Command
+`git clone https://github.com/Kandy-Peter/My-portfolio.git`
 
-These commands are here to help you for how to check errors in your code using Linter
+`cd My-portfolio`
 
-*to install the webhint run `npm init -y` to initialize the package and create `package.json`
-
- then run `npm install --save-dev hint@6.x`
- After creating the `.hintrc` file, run `npx hint .` to ckeck if there's an error.
-
-*to install the stylelint that help you to avoid errors in styles code run:
-    `npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
- Then run `npx stylelint "**/*.{css,scss}"` after creating a `.stylelint.json` file
-
-* To install Eslint run `npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
-And to fix lint errors run `npx eslint .`
-
-
-
-## Authors
+#### Open page in browser
+```bash
+$ run on live server
+$ runs on http://localhost:8000/
+```
+## Author
 
 👤 **Kandi Peter**
 
